@@ -2,3 +2,5 @@
 .detail img{height:auto;display:block}
 
 .store-badge{display:inline-block;margin-top:20px;line-height:0;max-width:100%;text-decoration:none}.store-badge img{display:block;width:220px;max-width:100%;height:auto}.update-status{border-left:3px solid #b9cabe;padding:10px 14px;background:#edf2ef}
+
+.launch-sale{margin-top:26px;padding-top:22px;border-top:1px solid #ffffff40}.launch-sale>strong{display:block;color:#fff;font-size:16px;margin-bottom:10px}.launch-sale p{margin-bottom:8px}.launch-sale .sale-price{font-size:36px;font-weight:700;color:#fff;line-height:1.5}.launch-sale .sale-period{font-size:14px;margin-bottom:0}
