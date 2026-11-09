@@ -60,3 +60,13 @@
  .hero>.hero-side{grid-column:2;grid-row:1}
  .hero>.quick-features{grid-row:2}
 }
+
+/* Social links in the site header */
+.navlinks { flex-wrap: wrap; justify-content: flex-end; }
+.social-links { display: inline-flex; align-items: center; gap: 6px; flex: none; }
+.social-links a { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 8px; color: #161616; }
+.social-links a:hover { background: #e7eee9; }
+.social-links a:focus-visible { outline: 2px solid #295641; outline-offset: 2px; }
+@media (max-width: 760px) {
+  .navlinks { justify-content: flex-start; }
+}
