@@ -76,16 +76,18 @@
 .wrap > .quick-features{padding:0 0 28px}
 .product-highlights{border-top:1px solid #dbe3df;padding:24px 0 28px}
 .product-highlights h2{font-size:21px;margin:0 0 12px}
-.product-highlights .features{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.product-highlights article{padding:16px;background:#fff;border:1px solid #dbe3df;border-radius:8px}
-.product-highlights h3{font-size:17px;line-height:1.4;margin:0 0 8px}
-.product-highlights p{font-size:15px;line-height:1.65;margin:0 0 10px}
-.product-highlights p:last-child{margin-bottom:0}
+.highlight-list{list-style:none;max-width:780px;margin:0;padding:0}
+.highlight-list li{padding:16px 0}
+.highlight-list li + li{border-top:1px solid #dbe3df}
+.highlight-list li:first-child{padding-top:4px}
+.highlight-list li:last-child{padding-bottom:0}
+.highlight-list h3{font-size:17px;line-height:1.4;margin:0 0 8px}
+.highlight-list p{font-size:15px;line-height:1.65;color:#52665e;margin:0 0 10px}
+.highlight-list p:last-child{margin-bottom:0}
 @media(max-width:950px){
   .wrap > .quick-features .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:760px){
-  .product-highlights .features{grid-template-columns:minmax(0,1fr)}
   .site-intro{grid-template-columns:minmax(0,1fr)}
 }
 @media(max-width:460px){
