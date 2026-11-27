@@ -74,16 +74,28 @@
 /* FrameCatalog landing page sections */
 .site-intro{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
 .wrap > .quick-features{padding:0 0 28px}
-.product-highlights{border-top:1px solid #dbe3df;padding:24px 0 28px}
-.product-highlights h2{font-size:21px;margin:0 0 12px}
-.highlight-list{list-style:none;max-width:780px;margin:0;padding:0}
-.highlight-list li{padding:16px 0}
+.product-highlights{border-top:1px solid #dbe3df;padding:32px 0 36px}
+.product-highlights h2{font-size:clamp(23px,3vw,30px);line-height:1.35;margin:0 0 16px}
+.highlight-list{list-style:none;max-width:1000px;margin:0;padding:0}
+.highlight-list li{padding:19px 0}
 .highlight-list li + li{border-top:1px solid #dbe3df}
-.highlight-list li:first-child{padding-top:4px}
 .highlight-list li:last-child{padding-bottom:0}
-.highlight-list h3{font-size:17px;line-height:1.4;margin:0 0 8px}
-.highlight-list p{font-size:15px;line-height:1.65;color:#52665e;margin:0 0 10px}
+.highlight-list h3{
+  position:relative;padding-inline-start:14px;color:#193e31;
+  font-size:18px;line-height:1.45;margin:0 0 8px;
+}
+.highlight-list h3::before{
+  content:"";position:absolute;left:0;top:.25em;width:4px;height:1em;
+  border-radius:4px;background:#55846e;
+}
+.highlight-list p{font-size:15px;line-height:1.7;color:#52665e;margin:0 0 10px}
 .highlight-list p:last-child{margin-bottom:0}
+.highlight-list strong{color:#193e31;background:#e4eee8;padding:.06em .25em;border-radius:3px}
+@media(min-width:761px){
+  .highlight-list li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.55fr);column-gap:clamp(22px,4vw,52px)}
+  .highlight-list h3{grid-column:1;margin:0}
+  .highlight-list p{grid-column:2}
+}
 @media(max-width:950px){
   .wrap > .quick-features .quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
